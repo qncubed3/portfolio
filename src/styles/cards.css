@@ -1,0 +1,10 @@
+.content-card {
+  max-width: 42rem;
+  padding: 1.5rem 1.75rem;
+  border-radius: 18px;
+  background: var(--card-bg);
+  box-shadow:
+    0 2px 8px rgba(28, 27, 25, 0.06),
+    0 8px 24px rgba(28, 27, 25, 0.08);
+  box-sizing: border-box;
+}

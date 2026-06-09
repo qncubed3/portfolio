@@ -1,0 +1,239 @@
+.project-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.project-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-name {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text-heading);
+}
+
+.project-date {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.project-links a {
+  font-size: 0.9rem;
+  color: var(--text-heading);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.project-links a:hover {
+  color: var(--text-body);
+}
+
+.project-image-dropdown {
+  margin-bottom: 0.75rem;
+}
+
+.project-preview-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s ease;
+}
+
+.project-preview-panel.open {
+  grid-template-rows: 1fr;
+}
+
+.project-preview-panel-inner {
+  overflow: hidden;
+  min-height: 0;
+  opacity: 0;
+  transform: translateY(-0.5rem);
+  transition:
+    opacity 0.35s ease,
+    transform 0.35s ease;
+}
+
+.project-preview-panel.open .project-preview-panel-inner {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-image-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0 0 0.75rem;
+  padding: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  font-size: 0.9rem;
+  color: var(--text-body);
+  cursor: pointer;
+  transition: color 0.15s;
+}
+
+.project-image-toggle:hover {
+  color: var(--text-heading);
+}
+
+.project-image-chevron {
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid currentColor;
+  transition: transform 0.2s ease;
+}
+
+.project-image-chevron.open {
+  transform: rotate(180deg);
+}
+
+.preview-carousel {
+  margin-bottom: 1rem;
+}
+
+.preview-carousel-viewport {
+  overflow: hidden;
+  border-radius: 14px;
+  background: var(--card-bg);
+}
+
+.preview-media-frame {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 14px;
+  background: var(--card-bg);
+}
+
+.preview-media-frame--dark,
+.preview-carousel-viewport--dark {
+  background: #16171d;
+}
+
+.preview-carousel-track {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.preview-carousel-slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+.preview-carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+
+.preview-carousel-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border: 1px solid var(--pill-border);
+  border-radius: 6px;
+  background: var(--card-bg);
+  font-size: 1rem;
+  line-height: 1;
+  color: var(--text-heading);
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.preview-carousel-btn:hover:not(:disabled) {
+  border-color: var(--text-muted);
+}
+
+.preview-carousel-btn:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.preview-carousel-count {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  min-width: 2.5rem;
+  text-align: center;
+}
+
+.project-preview-image,
+.project-preview-video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.preview-media-frame--fixed .project-preview-image,
+.preview-media-frame--fixed .project-preview-video {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.preview-media-frame--fixed .project-preview-image {
+  transform: scale(1.04);
+}
+
+.project-preview-video {
+  pointer-events: none;
+}
+
+.preview-media-frame--fixed .project-preview-video {
+  transform: scale(1.08);
+}
+
+.project-preview-video::-webkit-media-controls {
+  display: none !important;
+}
+
+.section .project-description {
+  margin: 0 0 0.75rem;
+  max-width: 42rem;
+  line-height: 1.6;
+  color: var(--text-body);
+}
+
+.section .project-description:last-of-type {
+  margin-bottom: 1rem;
+}
+
+.project-tools {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tool-pill {
+  padding: 0.25rem 0.65rem;
+  font-size: 0.8rem;
+  color: var(--text-body);
+  border: 1px solid var(--pill-border);
+  border-radius: 999px;
+  line-height: 1.4;
+}

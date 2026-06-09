@@ -1,0 +1,43 @@
+.section .thesis-intro {
+  margin: 0 0 1.5rem;
+  max-width: 42rem;
+  line-height: 1.6;
+  color: var(--text-body);
+}
+
+.thesis-figure {
+  margin: 0 0 1.5rem;
+}
+
+.thesis-figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.thesis-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.thesis-links a {
+  color: var(--text-heading);
+  font-size: 0.95rem;
+}
+
+.thesis-links a:hover {
+  text-decoration: underline;
+}
+
+.thesis-label {
+  margin: 0 0 0.75rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-heading);
+}
+
+.thesis-description {
+  max-width: 42rem;
+}
