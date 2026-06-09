@@ -5,11 +5,11 @@ import type { Project } from './types'
 
 const project: Project = {
   id: 'athletics-victoria',
-  name: 'AthsVic Insights',
-  date: 'June 2026',
+  name: 'Athletics Victoria Analytics Platform',
+  date: 'May 2026',
   description: [
-    'Built a full-stack analytics dashboard for Athletics Victoria race data, with a Next.js frontend and Django REST API that normalises the legacy ResultsHub feed into structured JSON endpoints.',
-    'Developed interactive views including a Leaflet venue map with meet counts, athlete head-to-head comparison, and calendar and results browsing, with custom parsers for relay leg data and HTML athlete result tables.',
+    'Built a full-stack analytics platform for Athletics Victoria race data using Typescript and React on the frontend, with Next.js and Django on the backend, normalising semistructured ResultsHub feed into clean JSON API endpoints.',
+    'Developed interactive views including a Mapbox relay replay animation, Leaflet venue map with meet counts, athlete head-to-head comparison, calendar event views, and athlete results tables and charts.',
   ],
   tools: [
     'TypeScript',
@@ -17,7 +17,7 @@ const project: Project = {
     'Next.js',
     'Python',
     'Django',
-    'REST APIs',
+    'Mapbox',
     'Leaflet',
     'Recharts',
   ],

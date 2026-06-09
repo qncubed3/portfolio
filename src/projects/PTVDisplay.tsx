@@ -7,8 +7,7 @@ const project: Project = {
   name: 'ESP32 Live PTV Display',
   date: 'May 2026',
   description: [
-    'A Python REST API and ESP32 firmware that pulls live Melbourne train departures and shows them on an SSD1306 OLED display.',
-    'The API returns compact JSON for the microcontroller; the device supports configurable station, platform, and how many departures to show.',
+    'An API pulling live Melbourne train departures from AnyTrip APIs and returns a compact JSON object to be consumed by an ESP32 microcontroller and displayed on an SSD1306 OLED display.'
   ],
   tools: ['Python', 'FastAPI', 'REST APIs', 'ESP32', 'Arduino C++'],
   demoUrl: 'https://esp32-ptv-display-um8x.vercel.app/docs',

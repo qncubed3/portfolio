@@ -7,8 +7,8 @@ const project: Project = {
   name: 'Pace Tools',
   date: 'March 2026',
   description: [
-    'Built a responsive web application for athletes to perform instant pace, distance and time calculations with multi-unit conversion, deployed on Vercel for public use.',
-    'Integrated GitHub OAuth authentication via NextAuth.js with a PostgreSQL database and Prisma ORM, allowing users to save and manage personalised pace records across sessions.',
+    'Built a responsive web application for athletes to perform instant pace, distance and time calculations with multi-unit conversion.',
+    'Integrated GitHub OAuth authentication via NextAuth.js with a PostgreSQL database and Prisma ORM, allowing users to save and manage personalised pace records.',
   ],
   tools: [
     'TypeScript',

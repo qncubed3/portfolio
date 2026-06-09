@@ -3,10 +3,10 @@ import type { Project } from './types'
 
 const project: Project = {
   id: 'pr-quadtree',
-  name: 'Melbourne Footpath Spatial Index',
-  date: 'January 2025',
+  name: 'Melbourne Footpath Spatial Index (University Project)',
+  date: '2022 Semester 2',
   description: [
-    'Built a point-region quadtree in C to index Melbourne footpath geometry by start and end coordinates. The structure supports fast point lookup and bounding-box search across the city’s footpath network. Boundary-aware quadrant partitioning handles shared coordinates and deduplicates results for area queries.',
+    'Built a point-region (PR) quadtree in C to index Melbourne footpath geometry by start and end coordinates. The structure supports fast point lookup and bounding-box search across Melbourne\'s footpath network.',
   ],
   tools: ['C', 'Spatial Indexing', 'GCC', 'Make'],
   githubUrl: 'https://github.com/qncubed3/quadtree',
